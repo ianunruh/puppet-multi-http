@@ -1,0 +1,5 @@
+name 'puppet-multi-http'
+version '0.1.0'
+license 'MIT'
+summary 'Puppet report handler that supports multiple HTTP urls'
+project_page 'https://github.com/ianunruh/puppet-multi-http'

@@ -1,0 +1,4 @@
+---
+:urls:
+  - http://webhook.example.com/hook/puppet
+  - http://dashboard.example.com:3000/reports/upload
