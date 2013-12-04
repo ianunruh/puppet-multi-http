@@ -1,5 +1,5 @@
-puppet-multi-http
-=================
+multi_http
+==========
 
 Description
 -----------
@@ -25,7 +25,7 @@ Installation & Usage
       - http://dashboard.example.com:3000/reports/upload
     ```
 
-2. Install `puppet-multi-http` as a module in your Puppet modules directory.
+2. Install `ianunruh/multi_http` as a module in your Puppet modules directory.
 
 3. Enable pluginsync and reports on your master and agents in `/etc/puppet/puppet.conf`.
 
