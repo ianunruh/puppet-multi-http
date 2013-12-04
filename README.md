@@ -18,26 +18,26 @@ Installation & Usage
 
 1. Create `multi_http.yaml` in your `/etc/puppet` directory.
 
-```yaml
----
-:urls:
-  - http://webhook.example.com/hook/puppet
-  - http://dashboard.example.com:3000/reports/upload
-```
+    ```
+    ---
+    :urls:
+      - http://webhook.example.com/hook/puppet
+      - http://dashboard.example.com:3000/reports/upload
+    ```
 
 2. Install `puppet-multi-http` as a module in your Puppet modules directory.
 
 3. Enable pluginsync and reports on your master and agents in `/etc/puppet/puppet.conf`.
 
-```
-[master]
-  report = true
-  reports = multi_http
-  pluginsync = true
-[agent]
-  report = true
-  pluginsync = true
-```
+    ```
+    [master]
+      report = true
+      reports = multi_http
+      pluginsync = true
+    [agent]
+      report = true
+      pluginsync = true
+    ```
 
 4. Run the Puppet clients and start getting reports
 
