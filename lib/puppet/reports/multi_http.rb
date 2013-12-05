@@ -17,7 +17,11 @@ Puppet::Reports.register_report(:multi_http) do
 
   def process
     CONFIG[:urls].each do |url|
-      process_url url
+      begin
+        process_url url
+      rescue => e
+        Puppet.err "Unable to submit report to #{url.to_s} [#{e.message}]"
+      end
     end
   end
 
